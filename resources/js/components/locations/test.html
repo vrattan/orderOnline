@@ -1,0 +1,528 @@
+<div class="tab-pane " id="primarytab-3">
+  <div class="form-fields">
+    <div class="form-group section-field span-full " id="form-field-location-opening-type-group">
+      <div class="field-section">
+        <h5 class="section-title">Opening Hours</h5>
+      </div>
+    </div>    
+    <div class="form-group radio-field span-full " id="form-field-location-options-hours-opening-type-group">
+      <div class="field-radio">
+        <div id="form-field-location-options-hours-opening-type" class="btn-group btn-group-toggle"
+            data-toggle="buttons">
+            <label class="btn btn-light ">
+            <input type="radio" id="form-field-location-options-hours-opening-type-1" name="Location[options][hours][opening][type]" value="24_7">
+                    24/7</label>
+            <label class="btn btn-light ">
+              <input type="radio" id="form-field-location-options-hours-opening-type-2" name="Location[options][hours][opening][type]"  value="daily">
+               Daily
+            </label>
+            <label class="btn btn-light active">
+              <input type="radio" id="form-field-location-options-hours-opening-type-3" name="Location[options][hours][opening][type]" value="flexible" checked="checked">
+              Flexible
+            </label>
+        </div>
+      </div>
+    </div>    
+    <div class="form-group checkbox-field span-full" data-trigger="[name=&#039;Location[options][hours][opening][type]&#039;]" data-trigger-action="show" data-trigger-condition="value[daily]" data-trigger-closest-parent="form"    id="form-field-location-options-hours-opening-days-group">
+      <label for="form-field-location-options-hours-opening-days" class="control-label">Days
+      </label>
+      <div class="field-checkbox">
+        <div id="form-field-location-options-hours-opening-days" class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-light ">
+            <input type="checkbox" id="checkbox_form-field-location-options-hours-opening-days_1"
+              name="Location[options][hours][opening][days][]" value="0">
+          Mon</label>
+          <label class="btn btn-light active">
+            <input type="checkbox" id="checkbox_form-field-location-options-hours-opening-days_2" name="Location[options][hours][opening][days][]" value="1" checked="checked">
+          Tue</label>
+          <label class="btn btn-light active">
+            <input  type="checkbox" id="checkbox_form-field-location-options-hours-opening-days_3"name="Location[options][hours][opening][days][]" value="2" checked="checked">
+          Wed</label>
+          <label class="btn btn-light active">
+            <input type="checkbox" id="checkbox_form-field-location-options-hours-opening-days_4" name="Location[options][hours][opening][days][]" value="3" checked="checked">
+            Thu</label>
+          <label class="btn btn-light active">
+            <input  type="checkbox" id="checkbox_form-field-location-options-hours-opening-days_5" name="Location[options][hours][opening][days][]" value="4" checked="checked">
+          Fri</label>
+          <label class="btn btn-light active">
+            <input type="checkbox" id="checkbox_form-field-location-options-hours-opening-days_6" name="Location[options][hours][opening][days][]" value="5" checked="checked">
+          Sat</label>
+          <label class="btn btn-light active">
+            <input type="checkbox" id="checkbox_form-field-location-options-hours-opening-days_7" name="Location[options][hours][opening][days][]" value="6" checked="checked">
+          Sun</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group widget-field span-left flex-width" data-trigger="[name=&#039;Location[options][hours][opening][type]&#039;]" data-trigger-action="show" data-trigger-condition="value[daily]" data-trigger-closest-parent="form"    id="form-field-location-options-hours-opening-open-group">
+      <label for="form-field-location-options-hours-opening-open" class="control-label">Open hour </label>
+      <div id="datepicker-formoptionshoursopeningopen-options-hours-opening-open" class="control-datepicker">
+        <div class="input-group" data-control="clockpicker" data-autoclose="true">
+          <input type="text" name="Location[options][hours][opening][open]" id="datepicker-formoptionshoursopeningopen-time-options-hours-opening-open" class="form-control"
+          autocomplete="off" value="00:00"/>
+          <span class="input-group-prepend">
+            <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group widget-field span-left flex-width" data-trigger="[name=&#039;Location[options][hours][opening][type]&#039;]" data-trigger-action="show" data-trigger-condition="value[daily]" data-trigger-closest-parent="form"    id="form-field-location-options-hours-opening-close-group">
+      <label for="form-field-location-options-hours-opening-close" class="control-label">Close hour </label>
+      <div  id="datepicker-formoptionshoursopeningclose-options-hours-opening-close" class="control-datepicker">
+        <div class="input-group" data-control="clockpicker" data-autoclose="true">
+          <input type="text" name="Location[options][hours][opening][close]" id="datepicker-formoptionshoursopeningclose-time-options-hours-opening-close" class="form-control"autocomplete="off" value="08:35"/>
+          <span class="input-group-prepend">
+            <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+          </span>
+        </div>
+      </div>
+    </div>    
+    <div class="form-group partial-field span-full " data-trigger="[name=&#039;Location[options][hours][opening][type]&#039;]" data-trigger-action="show" data-trigger-condition="value[flexible]" data-trigger-closest-parent="form"    id="form-field-location-options-hours-opening-flexible-group">
+      <label for="form-field-location-options-hours-opening-flexible" class="control-label">Flexible</label>
+      <div class="field-flexible-hours">
+        <div class="row">
+          <div class="col-sm-7">
+            <div class="table-responsive">
+              <table class="table table-stripped">
+                <thead>
+                  <tr>
+                      <th></th>
+                      <th>Open hour</th>
+                      <th>Close hour</th>
+                      <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span>Mon</span>
+                      <input  type="hidden" name="Location[options][hours][opening][flexible][0][day]" value="0"/>
+                    </td>
+                    <td>
+                      <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                        <input type="text" name="Location[options][hours][opening][flexible][0][open]" class="form-control" autocomplete="off" value="00:00"/>
+                        <span class="input-group-prepend">
+                          <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                        <input
+                            type="text"
+                            name="Location[options][hours][opening][flexible][0][close]"
+                            class="form-control"
+                            autocomplete="off"
+                            value="23:59"
+                             />
+                        <span class="input-group-prepend">
+                            <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <input
+                        type="hidden"
+                        name="Location[options][hours][opening][flexible][0][status]"
+                        value="0" >
+                      <div class="field-switch" data-control="switch">
+                        <input
+                          type="checkbox"
+                          name="Location[options][hours][opening][flexible][0][status]"
+                          id="form-field-location-options-hours-opening-flexible-0status"
+                          class="field-switch-input"
+                          value="1" checked="checked" >
+                        <label
+                            class="field-switch-label"
+                            for="form-field-location-options-hours-opening-flexible-0status" >
+                          <span class="field-switch-container">
+                              <span class="field-switch-active">
+                                  <span class="field-switch-toggle bg-success">Open</span>
+                              </span>
+                              <span class="field-switch-inactive">
+                                  <span class="field-switch-toggle bg-danger">Closed</span>
+                              </span>
+                          </span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>Tue</span>
+                      <input type="hidden" name="Location[options][hours][opening][flexible][1][day]" value="1"/>
+                    </td>
+                    <td>
+                      <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                        <input
+                          type="text"
+                          name="Location[options][hours][opening][flexible][1][open]"
+                          class="form-control"
+                          autocomplete="off"
+                          value="00:00"
+                        />
+                        <span class="input-group-prepend">
+                          <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                        <input
+                            type="text"
+                            name="Location[options][hours][opening][flexible][1][close]"
+                            class="form-control"
+                            autocomplete="off"
+                            value="23:59"
+                             />
+                        <span class="input-group-prepend">
+                          <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <input
+                          type="hidden"
+                          name="Location[options][hours][opening][flexible][1][status]"
+                          value="0">
+                      <div class="field-switch" data-control="switch">
+                        <input
+                              type="checkbox"
+                              name="Location[options][hours][opening][flexible][1][status]"
+                              id="form-field-location-options-hours-opening-flexible-1status"
+                              class="field-switch-input"
+                              value="1" checked="checked">
+                          <label class="field-switch-label" for="form-field-location-options-hours-opening-flexible-1status">
+                            <span class="field-switch-container">
+                              <span class="field-switch-active">
+                                  <span class="field-switch-toggle bg-success">Open</span>
+                              </span>
+                              <span class="field-switch-inactive">
+                                  <span class="field-switch-toggle bg-danger">Closed</span>
+                              </span>
+                            </span>
+                          </label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <span>Wed</span>
+                        <input
+                            type="hidden"
+                            name="Location[options][hours][opening][flexible][2][day]"
+                            value="2"/>
+                    </td>
+                    <td>
+                      <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                        <input
+                          type="text"
+                          name="Location[options][hours][opening][flexible][2][open]"
+                          class="form-control"
+                          autocomplete="off"
+                          value="00:00"/>
+                          <span class="input-group-prepend">
+                            <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                          </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                        <input
+                            type="text"
+                            name="Location[options][hours][opening][flexible][2][close]"
+                            class="form-control"
+                            autocomplete="off"
+                            value="23:59"
+                             />
+                        <span class="input-group-prepend">
+                            <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <input
+                          type="hidden"
+                          name="Location[options][hours][opening][flexible][2][status]"
+                          value="0">
+                      <div class="field-switch" data-control="switch">
+                        <input
+                            type="checkbox"
+                            name="Location[options][hours][opening][flexible][2][status]"
+                            id="form-field-location-options-hours-opening-flexible-2status"
+                            class="field-switch-input"
+                            value="1" checked="checked">
+                        <label class="field-switch-label" for="form-field-location-options-hours-opening-flexible-2status"
+                        >
+                          <span class="field-switch-container">
+                            <span class="field-switch-active">
+                                <span class="field-switch-toggle bg-success">Open</span>
+                            </span>
+                            <span class="field-switch-inactive">
+                                <span class="field-switch-toggle bg-danger">Closed</span>
+                            </span>
+                          </span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <span>Thu</span>
+                        <input
+                            type="hidden"
+                            name="Location[options][hours][opening][flexible][3][day]"
+                            value="3"/>
+                    </td>
+                    <td>
+                      <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                        <input
+                            type="text"
+                            name="Location[options][hours][opening][flexible][3][open]"
+                            class="form-control"
+                            autocomplete="off"
+                            value="00:00"
+                             />
+                        <span class="input-group-prepend">
+                            <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                        <input
+                            type="text"
+                            name="Location[options][hours][opening][flexible][3][close]"
+                            class="form-control"
+                            autocomplete="off"
+                            value="23:59"
+                             />
+                        <span class="input-group-prepend">
+                            <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                        <input
+                            type="hidden"
+                            name="Location[options][hours][opening][flexible][3][status]"
+                            value="0">
+                        <div class="field-switch" data-control="switch">
+                          <input
+                              type="checkbox"
+                              name="Location[options][hours][opening][flexible][3][status]"
+                              id="form-field-location-options-hours-opening-flexible-3status"
+                              class="field-switch-input"
+                              value="1" checked="checked">
+                          <label
+                              class="field-switch-label"
+                              for="form-field-location-options-hours-opening-flexible-3status"
+                          >
+                            <span class="field-switch-container">
+                                <span class="field-switch-active">
+                                    <span class="field-switch-toggle bg-success">Open</span>
+                                </span>
+                                <span class="field-switch-inactive">
+                                    <span class="field-switch-toggle bg-danger">Closed</span>
+                                </span>
+                            </span>
+                          </label>
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                  <td>
+                      <span>Fri</span>
+                      <input
+                          type="hidden"
+                          name="Location[options][hours][opening][flexible][4][day]"
+                          value="4"/>
+                  </td>
+                  <td>
+                    <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                      <input
+                          type="text"
+                          name="Location[options][hours][opening][flexible][4][open]"
+                          class="form-control"
+                          autocomplete="off"
+                          value="00:00"
+                           />
+                      <span class="input-group-prepend">
+                          <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                      </span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                      <input
+                        type="text"
+                        name="Location[options][hours][opening][flexible][4][close]"
+                        class="form-control"
+                        autocomplete="off"
+                        value="23:59"
+                      />
+                      <span class="input-group-prepend">
+                        <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                      </span>
+                    </div>
+                  </td>
+                  <td>
+                    <input
+                        type="hidden"
+                        name="Location[options][hours][opening][flexible][4][status]"
+                        value="0">
+                    <div class="field-switch" data-control="switch">
+                      <input
+                          type="checkbox"
+                          name="Location[options][hours][opening][flexible][4][status]"
+                          id="form-field-location-options-hours-opening-flexible-4status"
+                          class="field-switch-input"
+                          value="1" checked="checked">
+                      <label
+                          class="field-switch-label"
+                          for="form-field-location-options-hours-opening-flexible-4status"
+                      >
+                        <span class="field-switch-container">
+                            <span class="field-switch-active">
+                                <span class="field-switch-toggle bg-success">Open</span>
+                            </span>
+                            <span class="field-switch-inactive">
+                                <span class="field-switch-toggle bg-danger">Closed</span>
+                            </span>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <span>Sat</span>
+                      <input
+                          type="hidden"
+                          name="Location[options][hours][opening][flexible][5][day]"
+                          value="5"/>
+                  </td>
+                  <td>
+                    <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                      <input
+                          type="text"
+                          name="Location[options][hours][opening][flexible][5][open]"
+                          class="form-control"
+                          autocomplete="off"
+                          value="00:00"
+                           />
+                      <span class="input-group-prepend">
+                          <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                      </span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                      <input
+                          type="text"
+                          name="Location[options][hours][opening][flexible][5][close]"
+                          class="form-control"
+                          autocomplete="off"
+                          value="23:59"
+                           />
+                      <span class="input-group-prepend">
+                          <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                      </span>
+                    </div>
+                  </td>
+                  <td>
+                    <input
+                      type="hidden"
+                      name="Location[options][hours][opening][flexible][5][status]"
+                      value="0" >
+                    <div class="field-switch" data-control="switch" >
+                      <input
+                        type="checkbox"
+                        name="Location[options][hours][opening][flexible][5][status]"
+                        id="form-field-location-options-hours-opening-flexible-5status"
+                        class="field-switch-input"
+                        value="1" checked="checked">
+                      <label
+                          class="field-switch-label"
+                          for="form-field-location-options-hours-opening-flexible-5status"
+                      >
+                        <span class="field-switch-container">
+                          <span class="field-switch-active">
+                              <span class="field-switch-toggle bg-success">Open</span>
+                          </span>
+                          <span class="field-switch-inactive">
+                              <span class="field-switch-toggle bg-danger">Closed</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                <td>
+                    <span>Sun</span>
+                    <input
+                        type="hidden"
+                        name="Location[options][hours][opening][flexible][6][day]"
+                        value="6"/>
+                </td>
+                <td>
+                  <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                    <input
+                        type="text"
+                        name="Location[options][hours][opening][flexible][6][open]"
+                        class="form-control"
+                        autocomplete="off"
+                        value="00:00"
+                         />
+                    <span class="input-group-prepend">
+                      <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="input-group" data-control="clockpicker" data-autoclose="true">
+                    <input
+                      type="text"
+                      name="Location[options][hours][opening][flexible][6][close]"
+                      class="form-control"
+                      autocomplete="off"
+                      value="23:59" />
+                    <span class="input-group-prepend">
+                      <span class="input-group-icon"><i class="fa fa-clock-o"></i></span>
+                    </span>
+                  </div>
+                </td>
+                <td>
+                    <input
+                        type="hidden"
+                        name="Location[options][hours][opening][flexible][6][status]"
+                        value="0">
+                    <div class="field-switch" data-control="switch">
+                        <input
+                            type="checkbox"
+                            name="Location[options][hours][opening][flexible][6][status]"
+                            id="form-field-location-options-hours-opening-flexible-6status"
+                            class="field-switch-input"
+                            value="1" checked="checked">
+                        <label
+                            class="field-switch-label"
+                            for="form-field-location-options-hours-opening-flexible-6status"
+                        >
+                          <span class="field-switch-container">
+                            <span class="field-switch-active">
+                                <span class="field-switch-toggle bg-success">Open</span>
+                            </span>
+                            <span class="field-switch-inactive">
+                                <span class="field-switch-toggle bg-danger">Closed</span>
+                            </span>
+                          </span> 
+                        </label>
+                    </div>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
